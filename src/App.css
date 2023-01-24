@@ -2,37 +2,71 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form h1{
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form input {
+  border: 1px solid #B2BABD;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  background-color: #e2e2e2;
 }
 
-.App-link {
-  color: #61dafb;
+.form input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.lista{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.unitario{
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+  max-height: 500px;
+  min-height: 500px;
+}
+
+.unitario:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card{
+  padding: 10px;
+}
+
+.card img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.card p{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
